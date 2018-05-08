@@ -12,6 +12,7 @@ Requirements:
 To use this stack
 - Make a copy of `terraform.tfvars.example` 
 - Rename the copy to `terraform.tfvars`
+- Repeat the process for `terraform.backend.tfvars.example` to `terraform.backend.tfvars`
 - Fill in the values in the `.tfvars` file
 
 After that you can run your terraform commands. Remember you must start with `terraform init -backend-config=terraform.tfvars`
@@ -20,6 +21,6 @@ After that you can run your terraform commands. Remember you must start with `te
 
 Using Terraform after you have generated your `terraform.tfvars` file
 
-- `terraform init -backend-config=terraform.tfvars`
+- `terraform init -backend-config=terraform.backend.tfvars`
 - `terraform plan -out=stack.tfplan`
 - `terraform apply stack.tfplan`

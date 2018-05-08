@@ -2,6 +2,3 @@ bucket         = "" # The S3 bucket where the terraform state will be hosted on
 region         = "" # the region that both the infrastructure AND the s3 bucket will be in
 key            = "test.tfstate"
 profile        = "" # The aws profile name to use
-
-vpc_id = "vpc-" # The ID of the VPC to create the server in
-subnet_id = "subnet-" # The subnet in the VPC to run the server under

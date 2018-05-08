@@ -2,8 +2,6 @@ variable "region" {
   description = "The AWS region of the environment"
 }
 
-variable "bucket" {}
-variable "key" {}
 variable "profile" {}
 
 variable "vpc_id" {
