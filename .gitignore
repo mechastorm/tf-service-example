@@ -1,3 +1,4 @@
 *.tfvars
 !*.tfvars.example
 .terraform
+*.tfplan

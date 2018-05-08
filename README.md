@@ -15,3 +15,11 @@ To use this stack
 - Fill in the values in the `.tfvars` file
 
 After that you can run your terraform commands. Remember you must start with `terraform init -backend-config=terraform.tfvars`
+
+### Usage Example 
+
+Using Terraform after you have generated your `terraform.tfvars` file
+
+- `terraform init -backend-config=terraform.tfvars`
+- `terraform plan -out=stack.tfplan`
+- `terraform apply stack.tfplan`
